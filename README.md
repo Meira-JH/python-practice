@@ -30,7 +30,7 @@ python -m pip install --upgrade pip
 python -m pip install -r requirements-dev.txt
 ```
 
-You only need to create the environment once. For future sessions, activate it again with:
+### You only need to create the environment once. For future sessions, activate it again with:
 
 ```bash
 source .venv/bin/activate
