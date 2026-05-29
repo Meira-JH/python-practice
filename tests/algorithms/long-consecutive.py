@@ -68,7 +68,7 @@ def find_longest_consec() -> Callable[[dict[str, list[int]]], int]:
         pytest.param([10, 11, 12, 1, 2, 3], 3, id="tie-between-sequences"),
         pytest.param([50, 5, 6, 7, 100, 101, 102, 103], 4, id="multiple-runs"),
         pytest.param([1, 2, 4, 5, 6, 10], 3, id="gaps-break-sequences"),
-        pytest.param([3, -1, 0, 1, 2, -2, 5, 4], 6, id="unsorted-mixed-signs"),
+        pytest.param([3, -1, 0, 1, 2, -2, 5, 4], 8, id="unsorted-mixed-signs"),
         pytest.param(
             [-10**9, -10**9 + 1, 10**9 - 1, 10**9],
             2,

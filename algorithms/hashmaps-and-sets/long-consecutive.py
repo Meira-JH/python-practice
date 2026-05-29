@@ -28,6 +28,8 @@ input: Input = {
 
 
 def findLongestConsec(input: Input):
+    if len(input["nums"]) == 0: return 0
+
     # define the set to search for first numbers of sequences
     numsSet = set(input["nums"])
     # define current streak for comparison
@@ -46,7 +48,9 @@ def findLongestConsec(input: Input):
                 currentNum += 1
             
             # reset streak and find max between currentStreak to longestStreak
-            currentStreak = 0
             longestStreak = max(currentStreak, longestStreak)
+            currentStreak = 0
+
         
-        return longestStreak
+    return longestStreak
+    
