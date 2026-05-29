@@ -92,3 +92,10 @@ If package installation fails, make sure the virtual environment is activated an
 python -m pip install --upgrade pip
 python -m pip install -r requirements-dev.txt
 ```
+
+
+## Tests
+
+```bash
+./.venv/bin/pytest tests/[path]/[file-name].py
+```
