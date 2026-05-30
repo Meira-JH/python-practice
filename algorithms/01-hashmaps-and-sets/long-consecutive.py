@@ -41,11 +41,9 @@ def findLongestConsec(input: Input):
     for num in input["nums"]:
         # if there is no sequence number smaller, define current num to find sequence
         if(num - 1 not in numsSet):
-            currentNum = num
             # while num is in numsSet, loop to add 1 in sequence
-            while currentNum in numsSet:
+            while num + currentStreak in numsSet:
                 currentStreak += 1
-                currentNum += 1
             
             # reset streak and find max between currentStreak to longestStreak
             longestStreak = max(currentStreak, longestStreak)

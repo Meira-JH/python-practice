@@ -9,7 +9,7 @@ import pytest
 
 REPO_ROOT = Path(__file__).resolve().parents[2]
 MODULE_PATH = (
-    REPO_ROOT / "algorithms" / "hashmaps-and-sets" / "long-consecutive.py"
+    REPO_ROOT / "algorithms" / "01-hashmaps-and-sets" / "long-consecutive.py"
 )
 
 
